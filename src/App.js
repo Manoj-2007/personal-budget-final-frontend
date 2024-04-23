@@ -14,6 +14,9 @@ import './css/aos.css';
 import './css/style.css';
 
 import HomePage from './homePage/homePage';
+import LoginHomePage from './homePage/loginHomePage';
+import Signup from './user/signup';
+import Login from './user/login';
 
 const ErrorMessage = () => (
   <div style={{ color: 'red', textAlign: 'center' }}>
@@ -51,8 +54,10 @@ function App() {
       <div className="site-wrap">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          
-        </Routes>
+          <Route path="/loginhomepage" element={<LoginHomePage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          </Routes>
       </div>
     </Router>
   );
