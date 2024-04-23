@@ -19,6 +19,7 @@ import Signup from './user/signup';
 import Login from './user/login';
 import Budget from './budget/budget';
 import AddExpenses from './addExpense/addExpense';
+import VisualizeExpenses from './expense/visualizeExpenses';
 import ViewExpenses from './expense/viewExpenses';
 
 const ErrorMessage = () => (
@@ -63,6 +64,7 @@ function App() {
           <Route path="/budget" element={<Budget />} />
           <Route path="/expenses" element={<AddExpenses />} />
           <Route path="/viewexpenses" element={<ViewExpenses />} />
+          <Route path="/expensevisualization" element={<VisualizeExpenses />} />
         </Routes>
       </div>
     </Router>
