@@ -18,6 +18,8 @@ import LoginHomePage from './homePage/loginHomePage';
 import Signup from './user/signup';
 import Login from './user/login';
 import Budget from './budget/budget';
+import AddExpenses from './addExpense/addExpense';
+import ViewExpenses from './expense/viewExpenses';
 
 const ErrorMessage = () => (
   <div style={{ color: 'red', textAlign: 'center' }}>
@@ -59,7 +61,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/budget" element={<Budget />} />
-                  </Routes>
+          <Route path="/expenses" element={<AddExpenses />} />
+          <Route path="/viewexpenses" element={<ViewExpenses />} />
+        </Routes>
       </div>
     </Router>
   );
