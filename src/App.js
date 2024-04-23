@@ -17,6 +17,7 @@ import HomePage from './homePage/homePage';
 import LoginHomePage from './homePage/loginHomePage';
 import Signup from './user/signup';
 import Login from './user/login';
+import Budget from './budget/budget';
 
 const ErrorMessage = () => (
   <div style={{ color: 'red', textAlign: 'center' }}>
@@ -57,7 +58,8 @@ function App() {
           <Route path="/loginhomepage" element={<LoginHomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          </Routes>
+          <Route path="/budget" element={<Budget />} />
+                  </Routes>
       </div>
     </Router>
   );
